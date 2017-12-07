@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hangman Game</title>
+
+  <!-- Bootstrap and other styles-->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body background="assets/images/map.png">
+  <!-- alert message with To Start the game, you need to press OK-->
+  <script type="text/javascript">
+    alert("Welcome: Press OK to get started");
+  </script>
+
+  <!--/img src="assets/images/map.png"alt="[U.S. State Capitals]" width="350" height="350" style="opacity:0.4;filter:alpha(opacity=40);"-->
+
+  <!-- The body of the game is in the middle of the page-->
+  <div class="panel panel-default" style="max-width:1000px;margin-left:auto; margin-right:auto; margin-top:100px;">
+    <div class="panel-body text-center">
+
+      <h1> U.S. State Capitals Hangman</h1>
+      <div class="panel-body text-left">
+        <!-- The Container records the number of guesses, wrong guesses, wins and losses-->
+        <regularContainer=left>
+          <p>Number of guesses left: <span id="guesses-left"></span></p>
+          <p>Wrong Guesses: <span id="wrong-guesses"></span></p>
+          <p>Wins: <span id="win-counter"></span></p>
+          <p>Losses: <span id="loss-counter"></span></p>
+          <h3 id="word-blank"></h3>
+
+          <script src="./assets/javascript/game.js"></script>
+
+      </div>
+    </div>
+
+</body>
+<!-- Footer-->
+<footer>
+  &copy; Copyright 2017 Avash Chapagain
+</footer>
+
+</html>
